@@ -1,0 +1,292 @@
+* {
+   
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #202124;
+    font-size: 13px;
+}
+.google-search {
+    color: black;
+}
+.google-logo {
+    padding: 20px ;
+}
+header {
+    width: 100%;
+    height: 60px;
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px;
+    padding-top: 10px;
+}
+.nav-item {
+    align-items: center;
+    display: flex;
+}
+header nav a {
+    margin: 10px;
+    color: white;
+    align-items: center;
+    display: flex;
+
+}
+header nav .nav-link {
+    padding: 5px 5px;
+}
+header .nav .app-icon {
+    background-image: url(img/dots-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+}
+header nav .nav img{
+    border-radius: 50%;
+    margin-left: 5px;
+
+}
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-section {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.main-logo {
+    width: 300px;
+    margin-bottom: 20px;
+}
+.main-input {
+    border: 1px solid #5f6368;
+    width: 600px;
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.main-input:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: transparent;
+    background-color: #5f6368
+}
+
+.search-icon {
+    background-image: url(img/search-logo.svg);
+    background-repeat: no-repeat;
+    background-position: left ;
+    background-size: contain;
+    width: 43px;
+    height: 30px;
+    padding-right: 13px;
+}
+
+.main-input input {
+    flex-grow: 1;
+    height: 30px;
+    margin-right: 0;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+}
+.main-input input:focus {
+    outline: none;
+}
+.voice-icon{
+    background-image: url(img/google-voice.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.camera-icon{
+    background-image: url(img/camera-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: contain;
+    width: 30px;
+    height:30px;
+    padding-right: 10px;
+}
+
+.main-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.main-button button {
+    height: 36px;
+    background-color: #303134 ;
+    border: 1px solid #303134;
+    color: #e8eaed;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 0 16px;
+    margin: 11px 4px;
+    
+
+}
+
+.main-button button:hover {
+    border: 1px solid lightgray;
+
+}
+
+.google-search {
+    width: 152.633px;
+}
+
+.lucky-search {
+    width: 147.83px;
+}
+
+footer {
+    background-color: #1d1b1b;
+    height: 100px;
+}
+
+.content-footer {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.top-footer {
+    height: 50%;
+    border-bottom: 1px solid #505057;
+    
+    
+}
+
+.top-footer p {
+    color: #f6f7f8;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.bottom-footer {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+}
+
+.bottom-footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.bottom-footer ul li a {
+    font-size: 14px;
+    color: #f6f9fb;
+}
+
+.bottom-footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.left {
+    display: flex;
+}
+
+.left li {
+    margin-right: 15px;
+}
+
+
+.right {
+    display: flex;
+}
+
+.right li {
+    margin-left: 15px;
+}
+
+
+
+@media only screen and (max-width: 650px){
+   
+    
+    .main-logo {
+        width: 200px;
+    }
+
+    
+    .main-input {
+        width: 90%;
+        height: 35px;
+    }
+
+    .search-bar i {
+        font-size: 14px;
+    }
+
+    
+    .main-button button {
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .google-search {
+        width: 125px;
+    }
+    
+    .lucky-search {
+        width: 120px;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    .top-footer {
+        height: 50px;
+    }
+
+    .bottom-footer {
+        height: 100px;
+        flex-direction: column;
+    }
+
+    .left {
+        flex-wrap: wrap;
+    }
+
+}
